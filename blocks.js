@@ -23,8 +23,12 @@ function drawBackground(){
 }
 drawBackground();
 
-for(var r=0; r < 13; ++r){
-    for(var c = 0; c < 13; ++c){
+var r = -1;
+while(r < 13){
+    ++r;
+    var c = -1;
+    while(c < 13){
+        ++c;
         if(r >= c){
             brush.fillStyle = "#FF0000";
             brush.fillRect(10+30*c, 10+30*r, 20, 20);
